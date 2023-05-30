@@ -1,2 +1,2 @@
 # Red-Planet-Bistro
-Landing page for a mars restaurant. Practice react.js  project.
+Landing page for a mars restaurant. Practice of basic web development.
