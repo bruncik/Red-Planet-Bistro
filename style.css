@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #eecf33; }
+
+.cointainer {
+  background-color: aliceblue;
+  width: 98vw;
+  margin-left: 1vw;
+  margin-top: 1vh; }
+  .cointainer .header {
+    display: flex;
+    background-color: #28b455; }
+  .cointainer .title-info {
+    background-color: aqua;
+    display: flex; }
+  .cointainer .menu {
+    background-color: #745fa0; }
+    .cointainer .menu .appetizers {
+      display: flex; }
+    .cointainer .menu .entrees {
+      display: flex; }
+    .cointainer .menu .desserts {
+      display: flex; }
+    .cointainer .menu .beverages {
+      display: flex; }
+  .cointainer .galery {
+    background-color: bisque; }
+  .cointainer .contact {
+    background-color: #7ed56f; }
+  .cointainer .footer {
+    background-color: brown; }

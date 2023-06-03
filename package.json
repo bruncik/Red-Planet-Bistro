@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Landing page for a Mars restaurant",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruncik/Red-Planet-Bistro.git"
+  },
+  "author": "Jaroslav Bruncik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruncik/Red-Planet-Bistro/issues"
+  },
+  "homepage": "https://github.com/bruncik/Red-Planet-Bistro#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

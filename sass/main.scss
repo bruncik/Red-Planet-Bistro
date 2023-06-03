@@ -1,0 +1,77 @@
+// variables
+$color-primary: #eecf33;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b455;
+
+//  reseting broswer
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background-color: $color-primary;
+}
+
+////     content
+.cointainer{
+    background-color: aliceblue;
+    width: 98vw;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    
+    //////  header
+    .header{
+        display: flex;
+        background-color: #28b455;
+    }
+
+    // Title info
+    .title-info{
+        background-color: aqua;
+        display: flex;
+    }
+
+    // Menu
+    .menu{
+        background-color: rgb(116, 95, 160);
+
+        .appetizers{
+            display: flex;
+        }
+
+        .entrees{
+            display: flex;
+        }
+
+        .desserts{
+            display: flex;
+        }
+
+        .beverages{
+            display: flex;
+        }
+    }
+
+    //  Galery
+    .galery{
+        background-color: bisque;
+    }
+
+    // Contact
+    .contact{
+        background-color: #7ed56f;
+    }
+
+    //  Footer
+    .footer{
+        background-color: brown;
+    }
+}
