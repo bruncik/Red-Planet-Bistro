@@ -17,6 +17,21 @@ html {
 
 body {
   background-color: #eecf33; }
+  body h1 {
+    text-align: center;
+    padding: 2rem; }
+  @media (max-width: 152.5em) {
+    body {
+      font-size: 4rem; } }
+  @media (max-width: 112.5em) {
+    body {
+      font-size: 3rem; } }
+  @media (max-width: 75em) {
+    body {
+      font-size: 2rem; } }
+  @media (max-width: 37.5em) {
+    body {
+      font-size: 1rem; } }
 
 .cointainer {
   background-color: aliceblue;
@@ -41,15 +56,59 @@ body {
       display: flex; }
   .cointainer .galery {
     background-color: bisque; }
+    .cointainer .galery .galery-container {
+      padding-left: 1%;
+      width: 96vw;
+      display: flex;
+      justify-content: space-around; }
+      .cointainer .galery .galery-container .galery-img {
+        width: 18%;
+        margin: 1%; }
   .cointainer .contact {
-    background-color: #7ed56f; }
+    background-color: #d7852e;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .cointainer .contact h1 {
+      padding: 2rem; }
+    .cointainer .contact .text1 {
+      padding: 2rem;
+      padding-left: 5%;
+      padding-right: 5%; }
+    .cointainer .contact .text3 {
+      padding: 2rem;
+      padding-left: 5%;
+      padding-right: 5%; }
+    @media (max-width: 152.5em) {
+      .cointainer .contact {
+        font-size: 4rem; } }
+    @media (max-width: 112.5em) {
+      .cointainer .contact {
+        font-size: 3rem; } }
+    @media (max-width: 75em) {
+      .cointainer .contact {
+        font-size: 2rem; } }
+    @media (max-width: 37.5em) {
+      .cointainer .contact {
+        font-size: 1rem; } }
   .cointainer .footer {
     background-color: brown;
-    text-align: center;
-    color: #fff; }
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (max-width: 152.5em) {
+      .cointainer .footer {
+        font-size: 5rem; } }
+    @media (max-width: 112.5em) {
+      .cointainer .footer {
+        font-size: 3rem; } }
+    @media (max-width: 75em) {
+      .cointainer .footer {
+        font-size: 2rem; } }
     @media (max-width: 37.5em) {
       .cointainer .footer {
-        font-size: .8rem; } }
+        font-size: 1rem; } }
     .cointainer .footer p {
       padding-top: 1rem; }
     .cointainer .footer p:last-child {
