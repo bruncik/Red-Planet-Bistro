@@ -1,8 +1,8 @@
 // variables
 $color-primary: #d7852e;
-$color-primary-light: #7ed56f;
+$color-primary-red: #f02b2b;
 $color-primary-dark: #28b455;
-$color-white: #fff;
+$color-white: #ebbdbd;
 
 $four-containers: 20%;
 $two-containers:45%;
@@ -80,13 +80,53 @@ body{
     //////  header
     .header{
         display: flex;
-        background-color: #28b455;
+        
+        color:white;
+        .logo{
+            width: 20rem;
+            height: 20rem;
+            padding-left: 2%;
+            padding-top: 2%;
+            @include respond(tab-port)
+                    {
+                    width: 15rem;
+                    height: 15rem;
+                    }
+            @include respond(phone)
+                    {
+                    display: none;
+                    }
+        }
+        .header-text{
+            padding-left: 2%;
+            padding-top: 2%;
+
+            h5{
+                padding-bottom: 2rem;
+                font-style: italic;
+            }
+        }
+        background-color: $color-primary-red;
     }
 
     // Title info
     .title-info{
-        background-color: aqua;
+        background-color: $color-white;
+        
         display: flex;
+        .text{
+            padding: 2rem;
+        }
+        .img-title{
+            padding: 2rem;
+            .title{
+                width: 10rem;
+            }
+            @include respond(phone)
+                    {
+                    display: none;
+                    }
+        }
     }
 
     // Menu
@@ -194,7 +234,7 @@ body{
 
     //  Galery
     .galery{
-        background-color: bisque;
+        background-color: $color-white;
 
         .galery-container{
             //background-color:#28b455;

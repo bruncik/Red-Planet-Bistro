@@ -40,10 +40,38 @@ body {
   margin-top: 1vh; }
   .cointainer .header {
     display: flex;
-    background-color: #28b455; }
+    color: white;
+    background-color: #f02b2b; }
+    .cointainer .header .logo {
+      width: 20rem;
+      height: 20rem;
+      padding-left: 2%;
+      padding-top: 2%; }
+      @media (max-width: 56.25em) {
+        .cointainer .header .logo {
+          width: 15rem;
+          height: 15rem; } }
+      @media (max-width: 37.5em) {
+        .cointainer .header .logo {
+          display: none; } }
+    .cointainer .header .header-text {
+      padding-left: 2%;
+      padding-top: 2%; }
+      .cointainer .header .header-text h5 {
+        padding-bottom: 2rem;
+        font-style: italic; }
   .cointainer .title-info {
-    background-color: aqua;
+    background-color: #ebbdbd;
     display: flex; }
+    .cointainer .title-info .text {
+      padding: 2rem; }
+    .cointainer .title-info .img-title {
+      padding: 2rem; }
+      .cointainer .title-info .img-title .title {
+        width: 10rem; }
+      @media (max-width: 37.5em) {
+        .cointainer .title-info .img-title {
+          display: none; } }
   .cointainer .menu {
     background-color: #745fa0; }
     .cointainer .menu .menu-container {
@@ -125,7 +153,7 @@ body {
           .cointainer .menu .menu-container .beverages {
             width: 80%; } }
   .cointainer .galery {
-    background-color: bisque; }
+    background-color: #ebbdbd; }
     .cointainer .galery .galery-container {
       padding-left: 1%;
       width: 96vw;
@@ -163,7 +191,7 @@ body {
         font-size: 1rem; } }
   .cointainer .footer {
     background-color: brown;
-    color: #fff;
+    color: #ebbdbd;
     display: flex;
     flex-direction: column;
     align-items: center; }
