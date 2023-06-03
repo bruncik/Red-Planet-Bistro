@@ -1,9 +1,12 @@
 // variables
-$color-primary: #eecf33;
+$color-primary: #d7852e;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b455;
 $color-white: #fff;
 
+$four-containers: 20%;
+$two-containers:45%;
+$one-containers:70%;
 // MIXINS
 // ----- Media Query ---
 /*
@@ -89,22 +92,92 @@ body{
     // Menu
     .menu{
         background-color: rgb(116, 95, 160);
+        .menu-container{
+            display: flex;
+            flex-wrap: wrap;
 
         .appetizers{
-            display: flex;
+            background-color: $color-primary;
+            margin: 2rem;
+            border: 1px red  solid;
+            border-radius: 3%;
+        
+            h1{
+                    text-align: left;
+                    padding-left: 0;
+            }
+            
+            .row1{
+                display: flex;
+
+                .menu-img{
+                    width: 20rem;
+                    padding: 1rem;
+                }
+            }
+            
+            @include respond(desktop-big){
+                width: $four-containers;
+            }
+            @include respond(desktop){
+                width: $four-containers;
+            } 
+            @include respond(tab-land){
+                width: $two-containers;
+            }   
+            @include respond(phone){
+                width: $one-containers;
+            }
         }
 
         .entrees{
             display: flex;
+            @include respond(desktop-big){
+                width: $four-containers;
+            }
+            @include respond(desktop){
+                width: $four-containers;
+            } 
+            @include respond(tab-land){
+                width: $two-containers;
+            }   
+            @include respond(phone){
+                width: $one-containers;
+            }
         }
 
         .desserts{
             display: flex;
+            @include respond(desktop-big){
+                width: $four-containers;
+            }
+            @include respond(desktop){
+                width: $four-containers;
+            } 
+            @include respond(tab-land){
+                width: $two-containers;
+            }   
+            @include respond(phone){
+                width: $one-containers;
+            }
         }
 
         .beverages{
             display: flex;
+            @include respond(desktop-big){
+                width: $four-containers;
+            }
+            @include respond(desktop){
+                width: $four-containers;
+            } 
+            @include respond(tab-land){
+                width: $two-containers;
+            }   
+            @include respond(phone){
+                width: $one-containers;
+            }
         }
+    }
     }
 
     //  Galery

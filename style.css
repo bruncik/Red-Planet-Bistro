@@ -16,7 +16,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #eecf33; }
+  background-color: #d7852e; }
   body h1 {
     text-align: center;
     padding: 2rem; }
@@ -46,14 +46,76 @@ body {
     display: flex; }
   .cointainer .menu {
     background-color: #745fa0; }
-    .cointainer .menu .appetizers {
-      display: flex; }
-    .cointainer .menu .entrees {
-      display: flex; }
-    .cointainer .menu .desserts {
-      display: flex; }
-    .cointainer .menu .beverages {
-      display: flex; }
+    .cointainer .menu .menu-container {
+      display: flex;
+      flex-wrap: wrap; }
+      .cointainer .menu .menu-container .appetizers {
+        background-color: #d7852e;
+        margin: 2rem;
+        border: 1px red  solid;
+        border-radius: 3%; }
+        .cointainer .menu .menu-container .appetizers h1 {
+          text-align: left;
+          padding-left: 0; }
+        .cointainer .menu .menu-container .appetizers .row1 {
+          display: flex; }
+          .cointainer .menu .menu-container .appetizers .row1 .menu-img {
+            width: 20rem;
+            padding: 1rem; }
+        @media (max-width: 152.5em) {
+          .cointainer .menu .menu-container .appetizers {
+            width: 20%; } }
+        @media (max-width: 112.5em) {
+          .cointainer .menu .menu-container .appetizers {
+            width: 20%; } }
+        @media (max-width: 75em) {
+          .cointainer .menu .menu-container .appetizers {
+            width: 45%; } }
+        @media (max-width: 37.5em) {
+          .cointainer .menu .menu-container .appetizers {
+            width: 70%; } }
+      .cointainer .menu .menu-container .entrees {
+        display: flex; }
+        @media (max-width: 152.5em) {
+          .cointainer .menu .menu-container .entrees {
+            width: 20%; } }
+        @media (max-width: 112.5em) {
+          .cointainer .menu .menu-container .entrees {
+            width: 20%; } }
+        @media (max-width: 75em) {
+          .cointainer .menu .menu-container .entrees {
+            width: 45%; } }
+        @media (max-width: 37.5em) {
+          .cointainer .menu .menu-container .entrees {
+            width: 70%; } }
+      .cointainer .menu .menu-container .desserts {
+        display: flex; }
+        @media (max-width: 152.5em) {
+          .cointainer .menu .menu-container .desserts {
+            width: 20%; } }
+        @media (max-width: 112.5em) {
+          .cointainer .menu .menu-container .desserts {
+            width: 20%; } }
+        @media (max-width: 75em) {
+          .cointainer .menu .menu-container .desserts {
+            width: 45%; } }
+        @media (max-width: 37.5em) {
+          .cointainer .menu .menu-container .desserts {
+            width: 70%; } }
+      .cointainer .menu .menu-container .beverages {
+        display: flex; }
+        @media (max-width: 152.5em) {
+          .cointainer .menu .menu-container .beverages {
+            width: 20%; } }
+        @media (max-width: 112.5em) {
+          .cointainer .menu .menu-container .beverages {
+            width: 20%; } }
+        @media (max-width: 75em) {
+          .cointainer .menu .menu-container .beverages {
+            width: 45%; } }
+        @media (max-width: 37.5em) {
+          .cointainer .menu .menu-container .beverages {
+            width: 70%; } }
   .cointainer .galery {
     background-color: bisque; }
     .cointainer .galery .galery-container {
