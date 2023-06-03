@@ -2,6 +2,32 @@
 $color-primary: #eecf33;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b455;
+$color-white: #fff;
+
+// MIXINS
+// ----- Media Query ---
+/*
+0 - 600     phone       Phone
+600 - 900   tab-port    Tablet portrait
+900 - 1200  tab-land    Tablet landscape
+1200 - 1800 desktop     Desktop
+1em == 16 px,  rem not working propely in media query!  600/16
+*/
+@mixin respond($breakpoints){
+    @if $breakpoints == phone{
+        @media (max-width:37.5em) { @content } ;
+    }
+    @if $breakpoints == tab-port{
+        @media (max-width:56.25em) { @content } ;
+    }
+    @if $breakpoints == tab-land{
+        @media (max-width:75em) { @content } ;
+    }
+    @if $breakpoints == desktop{
+        @media (max-width:112.5em) { @content } ;
+    }
+    
+}
 
 //  reseting broswer
 *,
@@ -13,7 +39,8 @@ $color-primary-dark: #28b455;
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%;       // 1rem == 10px;    10px/16px = 62.5%
+    
 }
 
 body{
@@ -73,5 +100,17 @@ body{
     //  Footer
     .footer{
         background-color: brown;
+        text-align: center;
+        color:$color-white;
+
+        @include respond(phone){
+            font-size: .8rem;
+        }
+        p{
+            padding-top: 1rem;
+        }
+        p:last-child{
+            padding-bottom: 1rem;
+        }
     }
 }

@@ -1,3 +1,10 @@
+/*
+0 - 600     phone       Phone
+600 - 900   tab-port    Tablet portrait
+900 - 1200  tab-land    Tablet landscape
+1200 - 1800 desktop     Desktop
+1em == 16 px,  rem not working propely in media query!  600/16
+*/
 *,
 *::after,
 *::before {
@@ -37,4 +44,13 @@ body {
   .cointainer .contact {
     background-color: #7ed56f; }
   .cointainer .footer {
-    background-color: brown; }
+    background-color: brown;
+    text-align: center;
+    color: #fff; }
+    @media (max-width: 37.5em) {
+      .cointainer .footer {
+        font-size: .8rem; } }
+    .cointainer .footer p {
+      padding-top: 1rem; }
+    .cointainer .footer p:last-child {
+      padding-bottom: 1rem; }
