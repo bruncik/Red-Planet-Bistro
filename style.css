@@ -31,7 +31,7 @@ body {
       font-size: 2rem; } }
   @media (max-width: 37.5em) {
     body {
-      font-size: 1rem; } }
+      font-size: 2rem; } }
 
 .cointainer {
   background-color: aliceblue;
@@ -55,25 +55,33 @@ body {
         border: 1px red  solid;
         border-radius: 3%; }
         .cointainer .menu .menu-container .appetizers h1 {
-          text-align: left;
-          padding-left: 0; }
+          text-align: left; }
         .cointainer .menu .menu-container .appetizers .row1 {
           display: flex; }
+          .cointainer .menu .menu-container .appetizers .row1 .app-text {
+            padding: 1rem; }
           .cointainer .menu .menu-container .appetizers .row1 .menu-img {
             width: 20rem;
             padding: 1rem; }
+            @media (max-width: 56.25em) {
+              .cointainer .menu .menu-container .appetizers .row1 .menu-img {
+                width: 10rem;
+                height: 10rem; } }
+            @media (max-width: 37.5em) {
+              .cointainer .menu .menu-container .appetizers .row1 .menu-img {
+                width: 10rem; } }
         @media (max-width: 152.5em) {
           .cointainer .menu .menu-container .appetizers {
-            width: 20%; } }
+            width: 45%; } }
         @media (max-width: 112.5em) {
           .cointainer .menu .menu-container .appetizers {
-            width: 20%; } }
+            width: 45%; } }
         @media (max-width: 75em) {
           .cointainer .menu .menu-container .appetizers {
-            width: 45%; } }
+            width: 42%; } }
         @media (max-width: 37.5em) {
           .cointainer .menu .menu-container .appetizers {
-            width: 70%; } }
+            width: 80%; } }
       .cointainer .menu .menu-container .entrees {
         display: flex; }
         @media (max-width: 152.5em) {
@@ -87,7 +95,7 @@ body {
             width: 45%; } }
         @media (max-width: 37.5em) {
           .cointainer .menu .menu-container .entrees {
-            width: 70%; } }
+            width: 80%; } }
       .cointainer .menu .menu-container .desserts {
         display: flex; }
         @media (max-width: 152.5em) {
@@ -101,7 +109,7 @@ body {
             width: 45%; } }
         @media (max-width: 37.5em) {
           .cointainer .menu .menu-container .desserts {
-            width: 70%; } }
+            width: 80%; } }
       .cointainer .menu .menu-container .beverages {
         display: flex; }
         @media (max-width: 152.5em) {
@@ -115,7 +123,7 @@ body {
             width: 45%; } }
         @media (max-width: 37.5em) {
           .cointainer .menu .menu-container .beverages {
-            width: 70%; } }
+            width: 80%; } }
   .cointainer .galery {
     background-color: bisque; }
     .cointainer .galery .galery-container {
