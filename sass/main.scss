@@ -80,7 +80,7 @@ body{
     //////  header
     .header{
         display: flex;
-        
+        background-color: $color-primary-red;
         color:white;
         .logo{
             width: 20rem;
@@ -106,7 +106,7 @@ body{
                 font-style: italic;
             }
         }
-        background-color: $color-primary-red;
+        
     }
 
     // Title info

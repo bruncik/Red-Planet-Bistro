@@ -40,8 +40,8 @@ body {
   margin-top: 1vh; }
   .cointainer .header {
     display: flex;
-    color: white;
-    background-color: #f02b2b; }
+    background-color: #f02b2b;
+    color: white; }
     .cointainer .header .logo {
       width: 20rem;
       height: 20rem;
